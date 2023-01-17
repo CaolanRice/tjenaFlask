@@ -32,8 +32,11 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
-    from tjenaFlask.db import init_app
+    from db import init_app
 
     init_app(app)
+
+    from tjenaFlask import auth
+    app.register_blueprint(auth.bp)
 
     return app
