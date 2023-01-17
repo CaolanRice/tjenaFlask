@@ -1,3 +1,5 @@
+#venv\Scripts\activate
+#flask --app tjenaFlask --debug run
 import os
 
 from flask import Flask
@@ -32,7 +34,7 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
-    from db import init_app
+    from tjenaFlask.db import init_app
 
     init_app(app)
 
