@@ -1,0 +1,4 @@
+include tjenaFlask/schema.sql
+graft tjenaFlask/static
+graft tjenaFlask/templates
+global-exclude *.pyc
