@@ -2,3 +2,5 @@ instance/
 __pycache__/
 venv/
 *.egg-info/
+.coverage
+setup.cfg
